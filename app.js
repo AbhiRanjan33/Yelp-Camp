@@ -2,7 +2,7 @@ if(process.env.NODE_ENV!=="production"){
     require('dotenv').config();
 };
 //require('dotenv').config();
-const mongoURI = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/yelp-camp';
+const mongoURI = process.env.MONGO_URI || 'mongodb://0.0.0.0:27017/yelp-camp';
 //console.log("Mongo_uri: ",mongoURI);
 
 const express=require('express');

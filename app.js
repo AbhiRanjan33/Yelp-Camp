@@ -28,7 +28,7 @@ const MongoDBStore=require("connect-mongo")(session);
 const { object } = require('joi');
 const dbUrl='mongodb://localhost:27017/yelp-camp';
 //mongoose.connect(process.env.MONGO_URI);
-mongoose.connect('mongodb://localhost:27017/yelp-camp');
+mongoose.connect('process.env.MONGO_URI');
 
 const db=mongoose.connection;
 db.on("error",console.error.bind(console,"connection error:"));
